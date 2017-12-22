@@ -33,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-      ParseObject pontuacao = new ParseObject("TESTE1");
-      pontuacao.put("nome", "Maria");
+        /*
+      ParseObject pontuacao = new ParseObject("Teste");
+      pontuacao.put("nome", "Rose");
       pontuacao.put("pontos", 150 );
       pontuacao.saveInBackground(new SaveCallback() {
           @Override
@@ -46,6 +47,41 @@ public class MainActivity extends AppCompatActivity {
               }
           }
       });
+
+
+        //update de dados
+      ParseQuery<ParseObject> p = ParseQuery.getQuery("Teste");
+      p.getInBackground("cfl5DycEQb", new GetCallback<ParseObject>() {
+          @Override
+          public void done(ParseObject object, ParseException e) {
+              if( e == null ){
+
+                  object.put("pontos", 500);
+                  object.saveInBackground();
+
+              }else {
+                  Log.i("t", "Erro");
+              }
+          }
+      });
+      */
+        ParseQuery<ParseObject> filtro = ParseQuery.getQuery("Teste");
+
+        filtro.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if( e == null ){
+                    //Log.i("listando dados", "SUCESSO: "+objects.size());
+
+                    for (ParseObject p : objects ){
+                        Log.i("listando dados", "NOME: "+p.get("nome")+" PONTOS: "+p.get("pontos"));
+                    }
+                }else {
+                    Log.i("listando dados", "Erro");
+                }
+            }
+        });
+
   }
 
 }

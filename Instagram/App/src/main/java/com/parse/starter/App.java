@@ -19,7 +19,7 @@ import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 
-public class StarterApplication extends Application {
+public class App extends Application {
 
   @Override
   public void onCreate() {
@@ -35,5 +35,8 @@ public class StarterApplication extends Application {
             .server("https://parseapi.back4app.com/")
             .build()
     );
+
+    ParseACL acl = new ParseACL();
+    acl.setPublicReadAccess(true);
   }
 }
