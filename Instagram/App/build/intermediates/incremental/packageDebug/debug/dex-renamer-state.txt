@@ -1,4 +1,0 @@
-#Fri Dec 22 17:40:11 BRST 2017
-base.0=C\:\\developer\\instagram\\Instagram\\App\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Fri Dec 22 17:40:11 BRST 2017
-0.baseType=DIRECTORY
-0.base=C\:\\developer\\instagram\\Instagram\\App\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-0.path=classes.dex
-0.set=DEX
-count=1
