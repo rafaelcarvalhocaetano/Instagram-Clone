@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?><resources>    <dimen name="largura_logo">160dp</dimen>    <dimen name="altura_logo">55dp</dimen>    <dimen name="caixa_texto_raius">5dp</dimen></resources>
+<?xml version="1.0" encoding="utf-8"?><resources>    <dimen name="largura_logo">160dp</dimen>    <dimen name="altura_logo">55dp</dimen>    <dimen name="caixa_texto_raius">5dp</dimen>    <dimen name="elevacao_slidetab">8dp</dimen></resources>
